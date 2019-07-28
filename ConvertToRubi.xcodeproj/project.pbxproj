@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DD4387B39FDCCF136AF54F9 /* Pods_ConvertToRubiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C5D96955411AE25244E27B /* Pods_ConvertToRubiUITests.framework */; };
+		468A53FFD92FF7A6B29C4826 /* Pods_ConvertToRubiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664202596DB852B4225587DA /* Pods_ConvertToRubiTests.framework */; };
+		B3D87448E2E123DE288A7BA8 /* Pods_ConvertToRubi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE12B0D00BE792C0D74D85AE /* Pods_ConvertToRubi.framework */; };
+		E1E2A16422EDA1DA00D483CA /* UIViewController+showAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E2A16322EDA1DA00D483CA /* UIViewController+showAlert.swift */; };
 		E1ECFBC222ED956700AD38B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ECFBC122ED956700AD38B3 /* AppDelegate.swift */; };
 		E1ECFBC422ED956700AD38B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ECFBC322ED956700AD38B3 /* ViewController.swift */; };
 		E1ECFBC722ED956800AD38B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1ECFBC522ED956800AD38B3 /* Main.storyboard */; };
@@ -36,6 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0110BBBAFBA6947D2852D96E /* Pods-ConvertToRubiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvertToRubiUITests.release.xcconfig"; path = "Target Support Files/Pods-ConvertToRubiUITests/Pods-ConvertToRubiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		06C5D96955411AE25244E27B /* Pods_ConvertToRubiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConvertToRubiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		164EE35ADE8C336BEF3D7E22 /* Pods-ConvertToRubiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvertToRubiUITests.debug.xcconfig"; path = "Target Support Files/Pods-ConvertToRubiUITests/Pods-ConvertToRubiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		37E1F99C4ADF1CA09B07E731 /* Pods-ConvertToRubiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvertToRubiTests.release.xcconfig"; path = "Target Support Files/Pods-ConvertToRubiTests/Pods-ConvertToRubiTests.release.xcconfig"; sourceTree = "<group>"; };
+		3B9DEC972680D0E5FF6D4A73 /* Pods-ConvertToRubi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvertToRubi.debug.xcconfig"; path = "Target Support Files/Pods-ConvertToRubi/Pods-ConvertToRubi.debug.xcconfig"; sourceTree = "<group>"; };
+		664202596DB852B4225587DA /* Pods_ConvertToRubiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConvertToRubiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EFB170181E35668771DA51C /* Pods-ConvertToRubiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvertToRubiTests.debug.xcconfig"; path = "Target Support Files/Pods-ConvertToRubiTests/Pods-ConvertToRubiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE12B0D00BE792C0D74D85AE /* Pods_ConvertToRubi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConvertToRubi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E2A16322EDA1DA00D483CA /* UIViewController+showAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+showAlert.swift"; sourceTree = "<group>"; };
 		E1ECFBBE22ED956700AD38B3 /* ConvertToRubi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvertToRubi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1ECFBC122ED956700AD38B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1ECFBC322ED956700AD38B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +64,7 @@
 		E1ECFBE322ED956900AD38B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1ECFBF122ED98A400AD38B3 /* RubiResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubiResponseData.swift; sourceTree = "<group>"; };
 		E1ECFBF422ED98CB00AD38B3 /* RubiPostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubiPostData.swift; sourceTree = "<group>"; };
+		F0DF98FCFD8E21AFEA8554E1 /* Pods-ConvertToRubi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvertToRubi.release.xcconfig"; path = "Target Support Files/Pods-ConvertToRubi/Pods-ConvertToRubi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3D87448E2E123DE288A7BA8 /* Pods_ConvertToRubi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468A53FFD92FF7A6B29C4826 /* Pods_ConvertToRubiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +88,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD4387B39FDCCF136AF54F9 /* Pods_ConvertToRubiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9314E902E266C3DC0A818EB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE12B0D00BE792C0D74D85AE /* Pods_ConvertToRubi.framework */,
+				664202596DB852B4225587DA /* Pods_ConvertToRubiTests.framework */,
+				06C5D96955411AE25244E27B /* Pods_ConvertToRubiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE3DD6FD97EC2857A9D1394E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B9DEC972680D0E5FF6D4A73 /* Pods-ConvertToRubi.debug.xcconfig */,
+				F0DF98FCFD8E21AFEA8554E1 /* Pods-ConvertToRubi.release.xcconfig */,
+				6EFB170181E35668771DA51C /* Pods-ConvertToRubiTests.debug.xcconfig */,
+				37E1F99C4ADF1CA09B07E731 /* Pods-ConvertToRubiTests.release.xcconfig */,
+				164EE35ADE8C336BEF3D7E22 /* Pods-ConvertToRubiUITests.debug.xcconfig */,
+				0110BBBAFBA6947D2852D96E /* Pods-ConvertToRubiUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E1E2A16222EDA1C600D483CA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E1E2A16322EDA1DA00D483CA /* UIViewController+showAlert.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		E1ECFBB522ED956700AD38B3 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +133,8 @@
 				E1ECFBD522ED956900AD38B3 /* ConvertToRubiTests */,
 				E1ECFBE022ED956900AD38B3 /* ConvertToRubiUITests */,
 				E1ECFBBF22ED956700AD38B3 /* Products */,
+				AE3DD6FD97EC2857A9D1394E /* Pods */,
+				9314E902E266C3DC0A818EB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +151,7 @@
 		E1ECFBC022ED956700AD38B3 /* ConvertToRubi */ = {
 			isa = PBXGroup;
 			children = (
+				E1E2A16222EDA1C600D483CA /* Extension */,
 				E1ECFBEF22ED987200AD38B3 /* Model */,
 				E1ECFBC122ED956700AD38B3 /* AppDelegate.swift */,
 				E1ECFBC322ED956700AD38B3 /* ViewController.swift */,
@@ -162,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1ECFBE622ED956900AD38B3 /* Build configuration list for PBXNativeTarget "ConvertToRubi" */;
 			buildPhases = (
+				792047BBC42DB6225AF5D667 /* [CP] Check Pods Manifest.lock */,
 				E1ECFBBA22ED956700AD38B3 /* Sources */,
 				E1ECFBBB22ED956700AD38B3 /* Frameworks */,
 				E1ECFBBC22ED956700AD38B3 /* Resources */,
+				A7FD266405CAACE2BA851C9C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,6 +232,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1ECFBE922ED956900AD38B3 /* Build configuration list for PBXNativeTarget "ConvertToRubiTests" */;
 			buildPhases = (
+				B9E6BF18A92CEA30ECE81209 /* [CP] Check Pods Manifest.lock */,
 				E1ECFBCE22ED956900AD38B3 /* Sources */,
 				E1ECFBCF22ED956900AD38B3 /* Frameworks */,
 				E1ECFBD022ED956900AD38B3 /* Resources */,
@@ -197,6 +251,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1ECFBEC22ED956900AD38B3 /* Build configuration list for PBXNativeTarget "ConvertToRubiUITests" */;
 			buildPhases = (
+				EF153612DCE064BE688C693E /* [CP] Check Pods Manifest.lock */,
 				E1ECFBD922ED956900AD38B3 /* Sources */,
 				E1ECFBDA22ED956900AD38B3 /* Frameworks */,
 				E1ECFBDB22ED956900AD38B3 /* Resources */,
@@ -239,7 +294,6 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = E1ECFBB522ED956700AD38B3;
@@ -281,11 +335,98 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		792047BBC42DB6225AF5D667 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConvertToRubi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7FD266405CAACE2BA851C9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConvertToRubi/Pods-ConvertToRubi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConvertToRubi/Pods-ConvertToRubi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConvertToRubi/Pods-ConvertToRubi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9E6BF18A92CEA30ECE81209 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConvertToRubiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF153612DCE064BE688C693E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConvertToRubiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E1ECFBBA22ED956700AD38B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1E2A16422EDA1DA00D483CA /* UIViewController+showAlert.swift in Sources */,
 				E1ECFBC422ED956700AD38B3 /* ViewController.swift in Sources */,
 				E1ECFBF222ED98A400AD38B3 /* RubiResponseData.swift in Sources */,
 				E1ECFBC222ED956700AD38B3 /* AppDelegate.swift in Sources */,
@@ -348,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -409,6 +551,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -462,6 +605,7 @@
 		};
 		E1ECFBE722ED956900AD38B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B9DEC972680D0E5FF6D4A73 /* Pods-ConvertToRubi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -479,6 +623,7 @@
 		};
 		E1ECFBE822ED956900AD38B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0DF98FCFD8E21AFEA8554E1 /* Pods-ConvertToRubi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -496,6 +641,7 @@
 		};
 		E1ECFBEA22ED956900AD38B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EFB170181E35668771DA51C /* Pods-ConvertToRubiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +662,7 @@
 		};
 		E1ECFBEB22ED956900AD38B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37E1F99C4ADF1CA09B07E731 /* Pods-ConvertToRubiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -536,6 +683,7 @@
 		};
 		E1ECFBED22ED956900AD38B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 164EE35ADE8C336BEF3D7E22 /* Pods-ConvertToRubiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -555,6 +703,7 @@
 		};
 		E1ECFBEE22ED956900AD38B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0110BBBAFBA6947D2852D96E /* Pods-ConvertToRubiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

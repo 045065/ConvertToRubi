@@ -8,6 +8,7 @@
 
 import Foundation
 
+// ふりがな変換API Requestデータ
 struct RubiPostData: Codable {
     var app_id:String
     var request_id: String
