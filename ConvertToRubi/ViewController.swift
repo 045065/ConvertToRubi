@@ -12,7 +12,7 @@ import Alamofire
 
 class ViewController: UIViewController {
     // 入力テキスト
-    @IBOutlet weak var inputText: UITextField!
+    @IBOutlet weak var inputText: UITextView!
     // 出力テキスト
     @IBOutlet weak var outputText: UITextView!
     var rubiResponseData: RubiResponseData!
