@@ -14,6 +14,8 @@
 		E1ECFBCC22ED956800AD38B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1ECFBCA22ED956800AD38B3 /* LaunchScreen.storyboard */; };
 		E1ECFBD722ED956900AD38B3 /* ConvertToRubiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ECFBD622ED956900AD38B3 /* ConvertToRubiTests.swift */; };
 		E1ECFBE222ED956900AD38B3 /* ConvertToRubiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ECFBE122ED956900AD38B3 /* ConvertToRubiUITests.swift */; };
+		E1ECFBF222ED98A400AD38B3 /* RubiResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ECFBF122ED98A400AD38B3 /* RubiResponseData.swift */; };
+		E1ECFBF522ED98CB00AD38B3 /* RubiPostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ECFBF422ED98CB00AD38B3 /* RubiPostData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		E1ECFBDD22ED956900AD38B3 /* ConvertToRubiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConvertToRubiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1ECFBE122ED956900AD38B3 /* ConvertToRubiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertToRubiUITests.swift; sourceTree = "<group>"; };
 		E1ECFBE322ED956900AD38B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1ECFBF122ED98A400AD38B3 /* RubiResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubiResponseData.swift; sourceTree = "<group>"; };
+		E1ECFBF422ED98CB00AD38B3 /* RubiPostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubiPostData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		E1ECFBC022ED956700AD38B3 /* ConvertToRubi */ = {
 			isa = PBXGroup;
 			children = (
+				E1ECFBEF22ED987200AD38B3 /* Model */,
 				E1ECFBC122ED956700AD38B3 /* AppDelegate.swift */,
 				E1ECFBC322ED956700AD38B3 /* ViewController.swift */,
 				E1ECFBC522ED956800AD38B3 /* Main.storyboard */,
@@ -123,6 +128,31 @@
 				E1ECFBE322ED956900AD38B3 /* Info.plist */,
 			);
 			path = ConvertToRubiUITests;
+			sourceTree = "<group>";
+		};
+		E1ECFBEF22ED987200AD38B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1ECFBF322ED98B400AD38B3 /* Request */,
+				E1ECFBF022ED988100AD38B3 /* Response */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1ECFBF022ED988100AD38B3 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				E1ECFBF122ED98A400AD38B3 /* RubiResponseData.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		E1ECFBF322ED98B400AD38B3 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				E1ECFBF422ED98CB00AD38B3 /* RubiPostData.swift */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1ECFBC422ED956700AD38B3 /* ViewController.swift in Sources */,
+				E1ECFBF222ED98A400AD38B3 /* RubiResponseData.swift in Sources */,
 				E1ECFBC222ED956700AD38B3 /* AppDelegate.swift in Sources */,
+				E1ECFBF522ED98CB00AD38B3 /* RubiPostData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
