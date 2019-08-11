@@ -20,6 +20,7 @@
 		E1ECFBE222ED956900AD38B3 /* ConvertToRubiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ECFBE122ED956900AD38B3 /* ConvertToRubiUITests.swift */; };
 		E1ECFBF222ED98A400AD38B3 /* RubiResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ECFBF122ED98A400AD38B3 /* RubiResponseData.swift */; };
 		E1ECFBF522ED98CB00AD38B3 /* RubiPostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ECFBF422ED98CB00AD38B3 /* RubiPostData.swift */; };
+		E1FC708E230034A000326991 /* RubiPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FC708D230034A000326991 /* RubiPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		E1ECFBE322ED956900AD38B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1ECFBF122ED98A400AD38B3 /* RubiResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubiResponseData.swift; sourceTree = "<group>"; };
 		E1ECFBF422ED98CB00AD38B3 /* RubiPostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubiPostData.swift; sourceTree = "<group>"; };
+		E1FC708D230034A000326991 /* RubiPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubiPresenter.swift; sourceTree = "<group>"; };
 		F0DF98FCFD8E21AFEA8554E1 /* Pods-ConvertToRubi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvertToRubi.release.xcconfig"; path = "Target Support Files/Pods-ConvertToRubi/Pods-ConvertToRubi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E19CFB53230044100059E530 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1ECFBC322ED956700AD38B3 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E1E2A16222EDA1C600D483CA /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,10 +161,11 @@
 		E1ECFBC022ED956700AD38B3 /* ConvertToRubi */ = {
 			isa = PBXGroup;
 			children = (
+				E19CFB53230044100059E530 /* View */,
+				E1FC708C2300347400326991 /* Presenter */,
 				E1E2A16222EDA1C600D483CA /* Extension */,
 				E1ECFBEF22ED987200AD38B3 /* Model */,
 				E1ECFBC122ED956700AD38B3 /* AppDelegate.swift */,
-				E1ECFBC322ED956700AD38B3 /* ViewController.swift */,
 				E1ECFBC522ED956800AD38B3 /* Main.storyboard */,
 				E1ECFBC822ED956800AD38B3 /* Assets.xcassets */,
 				E1ECFBCA22ED956800AD38B3 /* LaunchScreen.storyboard */,
@@ -204,6 +215,14 @@
 				E1ECFBF422ED98CB00AD38B3 /* RubiPostData.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		E1FC708C2300347400326991 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E1FC708D230034A000326991 /* RubiPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +313,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
 			);
 			mainGroup = E1ECFBB522ED956700AD38B3;
@@ -426,6 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1FC708E230034A000326991 /* RubiPresenter.swift in Sources */,
 				E1E2A16422EDA1DA00D483CA /* UIViewController+showAlert.swift in Sources */,
 				E1ECFBC422ED956700AD38B3 /* ViewController.swift in Sources */,
 				E1ECFBF222ED98A400AD38B3 /* RubiResponseData.swift in Sources */,

@@ -9,7 +9,7 @@
 import Foundation
 
 // ふりがな変換API Responseデータ
-struct RubiResponseData:Codable {
+struct RubiResponseData: Codable {
     var request_id: String
     var output_type: String
     var converted: String
