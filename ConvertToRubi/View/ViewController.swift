@@ -25,7 +25,7 @@ class ViewController: UIViewController , RubiViewInterface{
     private var rubiResponseData: RubiResponseData!
     
     // ルビ変換画面Presenter
-    var presenter: RubiPresenterInterface!
+    private var presenter: RubiPresenterInterface!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,13 +34,13 @@ class ViewController: UIViewController , RubiViewInterface{
     }
     
     // UIの初期化
-    func initUI() {
+    private func initUI() {
         // 出力テキストは空に
         outputText.text = ""
     }
     
     // Presenterの初期化
-    func initPresenter() {
+    private func initPresenter() {
         presenter = RubiPresenter(with: self)
     }
     
@@ -62,7 +62,7 @@ class ViewController: UIViewController , RubiViewInterface{
         UIAlertController.showAlert(viewController: self,
                                     title: "",
                                     message: errorMessage,
-                                    buttonTitle: "OK",
+                                    buttonTitle: Message.Button.OK,
                                     buttonAction: nil)
     }
 }

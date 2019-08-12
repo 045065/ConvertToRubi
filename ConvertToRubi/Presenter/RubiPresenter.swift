@@ -6,7 +6,6 @@
 //  Copyright © 2019 藤枝拓弥. All rights reserved.
 //
 
-import Foundation
 import Alamofire
 
 protocol RubiPresenterInterface: class {
@@ -14,7 +13,7 @@ protocol RubiPresenterInterface: class {
 }
 
 class RubiPresenter: RubiPresenterInterface{
-    weak var view: RubiViewInterface?
+    weak private var view: RubiViewInterface?
     
     init(with view: RubiViewInterface) {
         self.view = view
@@ -24,16 +23,16 @@ class RubiPresenter: RubiPresenterInterface{
     func requestConvertToRubi(sentence: String) {
         // Request 作成
         let rubiPostData = RubiPostData(
-            app_id: "bc89b86b411dc8f1287f06613298d37c677be7d7736836144061c7e4586cc4a2",
-            request_id: "",
+            app_id: GooAPI.APP_ID,
+            request_id: GooAPI.Rubi.REQUEST_ID,
             sentence: sentence,
-            output_type: "hiragana")
+            output_type: GooAPI.Rubi.OUTPUT_TYPE)
         let encoder = JSONEncoder()
         let jsonData = try! encoder.encode(rubiPostData)
-        var request = URLRequest(url: URL(string: "https://labs.goo.ne.jp/api/hiragana")!)
+        var request = URLRequest(url: URL(string: GooAPI.Rubi.URL)!)
         
         request.httpMethod = HTTPMethod.post.rawValue
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue(HeaderField.JSON, forHTTPHeaderField: HeaderField.CONTENT_TYPE)
         request.httpBody = jsonData
         
         // Request 実行
@@ -45,21 +44,20 @@ class RubiPresenter: RubiPresenterInterface{
                 }
                 
                 if dataResponse.response?.statusCode != 200 {
-                    self.view?.showError(errorMessage: "サーバーに接続できません")
+                    self.view?.showError(errorMessage: Message.Error.CANT_CONNECT_SERVER)
                     return
                 }
                 
                 guard let data = dataResponse.data else {
-                    self.view?.showError(errorMessage: "結果がありません")
+                    self.view?.showError(errorMessage: Message.Error.NO_RESPONSE_DATA)
                     return
                 }
                 
-                if let result = try? JSONDecoder().decode(RubiResponseData.self, from: data) {
-                    self.view?.showRubi(converted: result.converted)
+                guard let result = try? JSONDecoder().decode(RubiResponseData.self, from: data) else {
+                    self.view?.showError(errorMessage: Message.Error.FAILED_JSON_PARSE)
                     return
                 }
-                
-                self.view?.showError(errorMessage: "JSONのパースに失敗しました")
+                self.view?.showRubi(converted: result.converted)
             }
         }
     }

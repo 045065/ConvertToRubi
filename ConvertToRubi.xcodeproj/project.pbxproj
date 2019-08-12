@@ -10,6 +10,7 @@
 		0DD4387B39FDCCF136AF54F9 /* Pods_ConvertToRubiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C5D96955411AE25244E27B /* Pods_ConvertToRubiUITests.framework */; };
 		468A53FFD92FF7A6B29C4826 /* Pods_ConvertToRubiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664202596DB852B4225587DA /* Pods_ConvertToRubiTests.framework */; };
 		B3D87448E2E123DE288A7BA8 /* Pods_ConvertToRubi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE12B0D00BE792C0D74D85AE /* Pods_ConvertToRubi.framework */; };
+		E19CFB5523004F8C0059E530 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19CFB5423004F8B0059E530 /* Constants.swift */; };
 		E1E2A16422EDA1DA00D483CA /* UIViewController+showAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E2A16322EDA1DA00D483CA /* UIViewController+showAlert.swift */; };
 		E1ECFBC222ED956700AD38B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ECFBC122ED956700AD38B3 /* AppDelegate.swift */; };
 		E1ECFBC422ED956700AD38B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ECFBC322ED956700AD38B3 /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 		664202596DB852B4225587DA /* Pods_ConvertToRubiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConvertToRubiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFB170181E35668771DA51C /* Pods-ConvertToRubiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvertToRubiTests.debug.xcconfig"; path = "Target Support Files/Pods-ConvertToRubiTests/Pods-ConvertToRubiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE12B0D00BE792C0D74D85AE /* Pods_ConvertToRubi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConvertToRubi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E19CFB5423004F8B0059E530 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E1E2A16322EDA1DA00D483CA /* UIViewController+showAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+showAlert.swift"; sourceTree = "<group>"; };
 		E1ECFBBE22ED956700AD38B3 /* ConvertToRubi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvertToRubi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1ECFBC122ED956700AD38B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				E1ECFBC822ED956800AD38B3 /* Assets.xcassets */,
 				E1ECFBCA22ED956800AD38B3 /* LaunchScreen.storyboard */,
 				E1ECFBCD22ED956800AD38B3 /* Info.plist */,
+				E19CFB5423004F8B0059E530 /* Constants.swift */,
 			);
 			path = ConvertToRubi;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				E1E2A16422EDA1DA00D483CA /* UIViewController+showAlert.swift in Sources */,
 				E1ECFBC422ED956700AD38B3 /* ViewController.swift in Sources */,
 				E1ECFBF222ED98A400AD38B3 /* RubiResponseData.swift in Sources */,
+				E19CFB5523004F8C0059E530 /* Constants.swift in Sources */,
 				E1ECFBC222ED956700AD38B3 /* AppDelegate.swift in Sources */,
 				E1ECFBF522ED98CB00AD38B3 /* RubiPostData.swift in Sources */,
 			);
