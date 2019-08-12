@@ -47,7 +47,7 @@ class ViewController: UIViewController , RubiViewInterface{
     // ふりがな変換
     @IBAction func convertToRubi(_ sender: UIButton) {
         SVProgressHUD.show()
-        presenter.requestConvertToRubi(sentence: inputText.text!)
+        presenter.convertToRubi(sentence: inputText.text!)
     }
     
     // ふりがな変換後テキストを出力

@@ -9,7 +9,7 @@
 import Alamofire
 
 protocol RubiPresenterInterface: class {
-    func requestConvertToRubi(sentence: String)
+    func convertToRubi(sentence: String)
 }
 
 class RubiPresenter: RubiPresenterInterface{
@@ -20,10 +20,12 @@ class RubiPresenter: RubiPresenterInterface{
     }
     
     // ふりがな変換API Request
-    func requestConvertToRubi(sentence: String) {
+    func requestConvertToRubi(sentence: String,
+                              success: @escaping (RubiResponseData)->Void,
+                              failure: @escaping (String)->Void) {
         // 入力文字が空の場合
         if sentence.isEmpty {
-            self.view?.showError(errorMessage: Message.Error.NO_INPUT_TEXT)
+            failure(Message.Error.NO_INPUT_TEXT)
             return
         }
         
@@ -43,28 +45,41 @@ class RubiPresenter: RubiPresenterInterface{
         
         // Request 実行
         Alamofire.request(request).responseJSON { (dataResponse) in
-            DispatchQueue.main.async {
-                if let error = dataResponse.error {
-                    self.view?.showError(errorMessage: error.localizedDescription)
-                    return
-                }
-                
-                if dataResponse.response?.statusCode != 200 {
-                    self.view?.showError(errorMessage: Message.Error.CANT_CONNECT_SERVER)
-                    return
-                }
-                
-                guard let data = dataResponse.data else {
-                    self.view?.showError(errorMessage: Message.Error.NO_RESPONSE_DATA)
-                    return
-                }
-                
-                guard let result = try? JSONDecoder().decode(RubiResponseData.self, from: data) else {
-                    self.view?.showError(errorMessage: Message.Error.FAILED_JSON_PARSE)
-                    return
-                }
-                self.view?.showRubi(converted: result.converted)
+            if let error = dataResponse.error {
+                failure(error.localizedDescription)
+                return
             }
+            if dataResponse.response?.statusCode != 200 {
+                failure(Message.Error.CANT_CONNECT_SERVER)
+                return
+            }
+            guard let data = dataResponse.data else {
+                failure(Message.Error.NO_RESPONSE_DATA)
+                return
+                
+            }
+            guard let result = try? JSONDecoder().decode(RubiResponseData.self, from: data) else {
+                failure(Message.Error.FAILED_JSON_PARSE)
+                return
+                
+            }
+            success(result)
         }
+    }
+    
+    // ふりがな変換
+    func convertToRubi(sentence: String) {
+        requestConvertToRubi(sentence: sentence,
+                             success:
+            {[weak self] (result) in
+                guard let weakSelf = self else { return }
+                weakSelf.view?.showRubi(converted: result.converted)
+                
+            },
+                             failure:
+            {[weak self] (message) in
+                guard let weakSelf = self else { return }
+                weakSelf.view?.showError(errorMessage: message)
+        })
     }
 }
