@@ -59,6 +59,7 @@ class ViewController: UIViewController , RubiViewInterface{
     // エラーを出力
     func showError(errorMessage: String) {
         SVProgressHUD.dismiss()
+        self.outputText.text = ""
         UIAlertController.showAlert(viewController: self,
                                     title: "",
                                     message: errorMessage,
