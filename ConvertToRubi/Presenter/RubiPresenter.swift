@@ -21,6 +21,12 @@ class RubiPresenter: RubiPresenterInterface{
     
     // ふりがな変換API Request
     func requestConvertToRubi(sentence: String) {
+        // 入力文字が空の場合
+        if sentence.isEmpty {
+            self.view?.showError(errorMessage: Message.Error.NO_INPUT_TEXT)
+            return
+        }
+        
         // Request 作成
         let rubiPostData = RubiPostData(
             app_id: GooAPI.APP_ID,
