@@ -37,6 +37,8 @@ class ViewController: UIViewController , RubiViewInterface{
     private func initUI() {
         // 出力テキストは空に
         outputText.text = ""
+        // 出力テキストは編集不可に
+        outputText.isEditable = false
     }
     
     // Presenterの初期化
